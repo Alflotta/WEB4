@@ -1,0 +1,210 @@
+:root {
+  --green: #0F6B5F;
+  --amber: #F2A93B;
+  --ink: #16302B;
+  --field: #F4F7F5;
+  --mist: #E6EFEC;
+  --bs-body-font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--mist);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+.ticket-card {
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 1.25rem 2.5rem rgba(22, 48, 43, 0.15);
+  overflow: hidden;
+}
+
+.ticket-head {
+  background: var(--green);
+  color: #fff;
+  padding: 1.25rem 2rem;
+}
+
+.ticket-head h1 {
+  font-weight: 700;
+}
+
+.ticket-body {
+  padding: 2rem;
+}
+
+@media (max-width: 575.98px) {
+  .ticket-head {
+    padding: 1rem 1.25rem;
+  }
+
+  .ticket-body {
+    padding: 1.25rem;
+  }
+}
+
+.form-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+legend.form-label {
+  float: none;
+  width: auto;
+  padding: 0;
+}
+
+.form-control,
+.form-select {
+  background-color: var(--field);
+  border: 1px solid var(--mist);
+  border-radius: 0.75rem;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+
+.form-control::placeholder {
+  color: #7d9791;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--field);
+  border-color: var(--green);
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.2);
+  color: var(--ink);
+}
+
+.form-floating > .form-control {
+  height: 3.5rem;
+  padding-top: 1.6rem;
+  padding-bottom: 0.4rem;
+}
+
+.form-floating > .form-control:not(:focus)::placeholder {
+  color: var(--ink);
+  opacity: 1;
+}
+
+.form-floating > label {
+  color: var(--ink);
+  font-size: 0.9rem;
+  opacity: 0.6;
+  transform: scale(0.78) translateY(-0.55rem) translateX(0.15rem);
+}
+
+.trip-toggle {
+  display: inline-flex;
+}
+
+.trip-toggle .btn {
+  background: #fff;
+  border: 1px solid var(--green);
+  border-radius: 0;
+  color: var(--green);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+}
+
+.trip-toggle label:first-of-type {
+  border-radius: 2rem 0 0 2rem;
+}
+
+.trip-toggle label:last-of-type {
+  border-radius: 0 2rem 2rem 0;
+  border-left: 0;
+}
+
+.trip-toggle .btn-check:checked + .btn {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+}
+
+.trip-toggle .btn-check:focus-visible + .btn {
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.35);
+  position: relative;
+  z-index: 1;
+}
+
+.form-check-label {
+  font-size: 0.85rem;
+}
+
+.form-check-input {
+  border-color: #9bb2ac;
+}
+
+.form-check-input:checked {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+.form-check-input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.25);
+}
+
+.form-switch .form-check-input {
+  background-color: var(--mist);
+}
+
+.form-switch .form-check-input:checked {
+  background-color: var(--green);
+}
+
+.input-group-text {
+  background: var(--green);
+  border: 1px solid var(--green);
+  border-bottom-left-radius: 0.75rem;
+  border-top-left-radius: 0.75rem;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.btn {
+  font-family: inherit;
+}
+
+.btn-find,
+.btn-clear {
+  border-radius: 2rem;
+  padding: 0.65rem 1.75rem;
+}
+
+.btn-find {
+  background: var(--amber);
+  border: 1px solid var(--amber);
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.btn-find:hover,
+.btn-find:active {
+  background: #e29a28;
+  border-color: #e29a28;
+  color: var(--ink);
+}
+
+.btn-clear {
+  background: #fff;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.btn-clear:hover,
+.btn-clear:active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+}
+
+.btn:focus-visible {
+  box-shadow: 0 0 0 0.2rem rgba(15, 107, 95, 0.35);
+}
